@@ -1,0 +1,117 @@
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+footer {
+  position: relative;
+  padding: 20px;
+  background-color: #2091F5;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .isologo {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .isologo .iso {
+  width: 40px;
+  height: 40px;
+}
+footer .isologo .iso .isoimg {
+  width: 100%;
+  height: 100%;
+}
+footer .isologo .logo {
+  font-family: "Dancing Script";
+  font-size: 1.875rem;
+  text-align: left;
+  line-height: 1;
+  color: #681EA8;
+  padding: 5px 10px;
+}
+footer .navbarRedes {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .navbarRedes li {
+  width: 50px;
+}
+footer .navbarRedes li a {
+  display: block;
+  font-size: 1.25rem;
+  color: #FFF;
+}
+footer .navbarRedes li a img {
+  width: 30px;
+  height: 30px;
+}
+footer .navbarLegales {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .navbarLegales li {
+  position: relative;
+}
+footer .navbarLegales li a {
+  display: block;
+  font-size: 1rem;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  footer .isologo {
+    height: 50px;
+    width: 220px;
+  }
+  footer .isologo .iso {
+    width: 50px;
+    height: 50px;
+  }
+  footer .isologo logo {
+    font-size: 2.5rem;
+  }
+  footer .navbarRedes {
+    text-align: center;
+  }
+  footer .navbarLegales {
+    text-align: center;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  footer .isologo {
+    height: 60px;
+    width: 280px;
+  }
+  footer .iso {
+    width: 60px;
+    height: 60px;
+  }
+  footer .logo {
+    font-size: 3.125rem;
+  }
+  footer .navbarRedes {
+    text-align: center;
+  }
+  footer .navbarLegales {
+    text-align: center;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=footer.css.map */

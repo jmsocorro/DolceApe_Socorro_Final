@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.escribime {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #F5CC14;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.escribime .escribimeTextos {
+  position: relative;
+  text-align: center;
+  order: 1;
+}
+.escribime .escribimeTextos .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.escribime .escribimeTextos .titulo {
+  width: 100%;
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.escribime .escribimeTextos .texto {
+  margin-bottom: 20px;
+}
+.escribime .escribimeTextos .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.escribime .escribimeTextos .botonVer:hover {
+  color: #681EA8;
+}
+.escribime .escribimeTextos .col-12 {
+  text-align: left;
+}
+.escribime .escribimeTextos .col-lg-6 {
+  text-align: left;
+}
+.escribime .escribimeTextos input {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeTextos select {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeTextos textarea {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 2;
+}
+.escribime .escribimeFotoCont .escribimeFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaEscibime .escribime {
+  background: none;
+}
+.paginaEscibime .escribime .escribimeContenedor {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.paginaEscibime .escribime .escribimeContenedor.espejado .escribimeTextos {
+  order: 1;
+}
+.paginaEscibime .escribime .escribimeContenedor.espejado .escribimeFotoCont {
+  order: 2;
+}
+.paginaEscibime .escribime .titulo {
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaEscibime .escribime .subtitulo {
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+.paginaEscibime .escribime .volver {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaEscibime .escribime .volanta {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.paginaEscibime .escribime .volanta:hover {
+  opacity: 0.5;
+}
+
+/* vista tablets */
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.3;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 2.625rem;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 1.65rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.3rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.4;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 3rem;
+  }
+  .paginaEscibime .escribime {
+    margin-top: 90px;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 1.8rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.5;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaEscibime .escribime {
+    margin-top: 100px;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 2rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.8rem;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=escribime.css.map */

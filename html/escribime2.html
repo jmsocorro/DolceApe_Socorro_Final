@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Dolce Ape Tortas</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Dolce Ape</h2>
+            <ul>
+               <li>
+                    <a href="../">INICIO</a>
+                </li>
+                <li>
+                    <a href="../html/tortas.html">TORTAS</a>
+                </li>
+                <li>
+                    <a href="../html/conoceme.html">CONOCEME</a>
+                </li>
+                <li>
+                    <a href="../html/alegrias.html">ALEGRÍAS</a>
+                </li>
+                <li>
+                    <a href="../html/armala.html">ARMALA</a>
+                </li>
+                <li>
+                    <a href="../html/escribime.html">ESCRIBIME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="paginaEscribime">
+        <h1>Escribime</h1>
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>            
+            <fieldset>
+                <legend>Contame un poco de vos</legend>
+                <label for="nombre">¿Como te llamas?</label>
+                <input type="text" placeholder="Tu nombre, apodo, como te guste" name="nombre" id="nombre" required>
+                <label for="email">Dejame tu correo electrónico</label>
+                <input type="email" placeholder="maria@miweb.com" name="email" id="email" required>
+                <label for="celular">Si querés dejame tu celular para responderte mas rápido</label>
+                <input type="number" name="celular" id="celular" placeholder="Ej: 54 11 2664 5546">
+            </fieldset>
+            <fieldset>
+                <legend>Escribíme</legend>
+                <label for="asunto">¿Cómo te puedo ayudar?</label>
+                <select name="asunto" id="asunto" required>
+                    <option value="">Elejí una opción</option>
+                    <option value="Consulta">Quiero conocer mas de las tortas</option>
+                    <option value="Presupuesto">Necesito un Presupuesto</option>
+                    <option value="Cursos">Me gustaría aprender a hacer tortas</option>
+                    <option value="Otro">Tengo orta duda</option>
+                </select>
+                <label>Contame un poco mas</label>
+                <textarea name="mensaje" id="mensaje" cols="20" rows="5" placeholder="Usa este espacio para dejarme el mensaje"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Sigamos en contacto</legend>
+                <label for="novedades">Quiero estar al tanto de todas las novedades</label>
+                <input type="checkbox" name="novedades" id="novedades">
+            </fieldset>
+            <fieldset>
+                <button type="reset">BORRAR</button>
+                <button type="submit">ENVIAR</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h2 class="logo">Dolce Ape</h2>
+        <nav class="navbarRedes">
+            <ul >
+                <li>
+                    <a href="">
+                        <img src="../img/facebook-square-brands.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/instagram-brands.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/whatsapp-brands.svg" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/envelope-solid.svg" alt="Correo electrínico">
+                    </a>
+                </li>
+            </ul>    
+        </nav>
+        <nav class="navbarLegales">
+            <ul>
+                <li>
+                    <a href="">
+                        Copyright ©2022
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Politica de Privacidad
+                    </a>
+                </li>
+            </ul>    
+       </nav>
+
+    </footer>
+    
+</body>
+</html>

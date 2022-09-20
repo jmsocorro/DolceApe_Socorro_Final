@@ -1,0 +1,2370 @@
+@charset "UTF-8";
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap");
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+/* reset */
+/* clases generales */
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* clases generales */
+/* MAIN */
+main {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+/* MAIN */
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  main {
+    margin-top: 90px;
+  }
+}
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin-top: 100px;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  main {
+    margin-top: 0px;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  main {
+    margin-top: 0px;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 0px;
+  z-index: 1;
+  background: #FFF;
+  top: 0;
+  z-index: 1000;
+}
+header .navbar {
+  background: #FFF;
+  transition: all 0.5s;
+}
+header .navbar .isologo {
+  height: 60px;
+  width: 220px;
+  transition: all 0.5s;
+}
+header .navbar .isologo .iso {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s;
+}
+header .navbar .isologo .iso .isoimg {
+  width: 100%;
+  height: 100%;
+}
+header .navbar .isologo .logo {
+  transition: all 0.5s;
+  font-family: "Dancing Script";
+  font-size: 40px;
+  text-align: left;
+  line-height: 1;
+  color: #681EA8;
+  padding: 10px 10px 10px 70px;
+}
+header .navbar.navcomprimido .isologo {
+  height: 42px;
+  width: 154px;
+}
+header .navbar.navcomprimido .isologo .iso {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+}
+header .navbar.navcomprimido .isologo .logo {
+  font-size: 28px;
+  padding: 7px 7px 7px 49px;
+}
+
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    height: 90px;
+  }
+  header .navbar .isologo {
+    height: 70px;
+    width: 270px;
+  }
+  header .navbar .isologo .iso {
+    width: 70px;
+    height: 70px;
+  }
+  header .navbar .isologo .logo {
+    font-size: 50px;
+    padding: 10px 10px 10px 80px;
+  }
+}
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 100px;
+  }
+  header .navbar .isologo {
+    height: 80px;
+    width: 310px;
+  }
+  header .navbar .isologo .iso {
+    width: 80px;
+    height: 80px;
+  }
+  header .navbar .isologo .logo {
+    font-size: 60px;
+    padding: 10px 10px 10px 90px;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    height: 110px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0));
+  }
+  header .navbar {
+    background: none;
+  }
+  header .navbar.navcomprimido {
+    background: #FFF;
+  }
+  header .navbar .isologo {
+    height: 90px;
+    width: 350px;
+  }
+  header .navbar .isologo .iso {
+    width: 90px;
+    height: 90px;
+  }
+  header .navbar .isologo .logo {
+    font-size: 70px;
+    padding: 10px 10px 10px 100px;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  header {
+    height: 120px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0));
+  }
+  header .navbar {
+    background: none;
+  }
+  header .navbar.navcomprimido {
+    background: #FFF;
+  }
+  header .navbar .isologo {
+    height: 100px;
+    width: 400px;
+  }
+  header .navbar .isologo .iso {
+    width: 100px;
+    height: 100px;
+  }
+  header .navbar .isologo .logo {
+    font-size: 80px;
+    padding: 10px 10px 10px 110px;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+footer {
+  position: relative;
+  padding: 20px;
+  background-color: #2091F5;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .isologo {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .isologo .iso {
+  width: 40px;
+  height: 40px;
+}
+footer .isologo .iso .isoimg {
+  width: 100%;
+  height: 100%;
+}
+footer .isologo .logo {
+  font-family: "Dancing Script";
+  font-size: 1.875rem;
+  text-align: left;
+  line-height: 1;
+  color: #681EA8;
+  padding: 5px 10px;
+}
+footer .navbarRedes {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .navbarRedes li {
+  width: 50px;
+}
+footer .navbarRedes li a {
+  display: block;
+  font-size: 1.25rem;
+  color: #FFF;
+}
+footer .navbarRedes li a img {
+  width: 30px;
+  height: 30px;
+}
+footer .navbarLegales {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .navbarLegales li {
+  position: relative;
+}
+footer .navbarLegales li a {
+  display: block;
+  font-size: 1rem;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  footer .isologo {
+    height: 50px;
+    width: 220px;
+  }
+  footer .isologo .iso {
+    width: 50px;
+    height: 50px;
+  }
+  footer .isologo logo {
+    font-size: 2.5rem;
+  }
+  footer .navbarRedes {
+    text-align: center;
+  }
+  footer .navbarLegales {
+    text-align: center;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  footer .isologo {
+    height: 60px;
+    width: 280px;
+  }
+  footer .iso {
+    width: 60px;
+    height: 60px;
+  }
+  footer .logo {
+    font-size: 3.125rem;
+  }
+  footer .navbarRedes {
+    text-align: center;
+  }
+  footer .navbarLegales {
+    text-align: center;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.promos {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 1rem;
+  padding: 20px;
+  font-size: 2rem;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #FFF;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .promos {
+    height: calc(100vh - 90px);
+  }
+}
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .promos {
+    height: calc(100vh - 100px);
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 2.4rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .promos {
+    height: 100vh;
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 2.6rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.3rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .promos {
+    height: 100vh;
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 3rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.tortas {
+  position: relative;
+  padding-bottom: 30px;
+}
+.tortas .titulo {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 30px;
+}
+.tortas .tortasContenedor {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 200px);
+}
+.tortas .tortasContenedor .torta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tortas .tortasContenedor .torta .tortaFoto {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.tortas .tortasContenedor .torta .tortaTexto {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+  background: none;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.tortas .tortasContenedor .torta .tortaTexto:hover {
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+.tortas .tortasContenedor .torta4 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.tortas .tortasContenedor .torta2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.tortas .tortasContenedor .torta3 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.tortas .tortasContenedor .torta1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.tortas .tortasContenedor .torta5 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.tortas .tortasContenedor .torta6 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.paginaTortas .tortas .titulo {
+  font-size: 2.5rem;
+}
+.paginaTortas .tortas .volver {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaTortas .tortas .volver:hover {
+  opacity: 0.5;
+}
+.paginaTortas .tortas .volanta {
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaTortas .tortas .tortasContenedor {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 200px);
+}
+.paginaTortas .tortas .tortasContenedor .torta {
+  display: block;
+}
+.paginaTortas .tortas .tortasContenedor .torta1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.paginaTortas .tortas .tortasContenedor .torta2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.paginaTortas .tortas .tortasContenedor .torta3 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.paginaTortas .tortas .tortasContenedor .torta4 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.paginaTortas .tortas .tortasContenedor .torta5 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.paginaTortas .tortas .tortasContenedor .torta6 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.paginaTortas .tortas .tortasContenedor .torta7 {
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+.paginaTortas .tortas .tortasContenedor .torta8 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.paginaTortas .tortas .tortasContenedor .torta11 {
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+.paginaTortas .tortas .tortasContenedor .torta10 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+.paginaTortas .tortas .tortasContenedor .torta9 {
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+.paginaTortas .tortas .tortasContenedor .torta12 {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tortas .tortasContenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+  .tortas .tortasContenedor .torta4 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .tortas .tortasContenedor .torta2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .tortas .tortasContenedor .torta3 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .tortas .tortasContenedor .torta1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .tortas .tortasContenedor .torta5 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .tortas .tortasContenedor .torta6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .tortas .tortasContenedor .torta5 {
+    display: none;
+  }
+  .paginaTortas .tortas .tortasContenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 200px);
+  }
+  .paginaTortas .tortas .tortasContenedor .torta1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta4 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta6 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta7 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta8 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta9 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta10 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta11 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta12 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+}
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tortas .titulo {
+    font-size: 2.625rem;
+  }
+  .tortas .tortasContenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .tortas .tortasContenedor .torta4 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .tortas .tortasContenedor .torta2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .tortas .tortasContenedor .torta3 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .tortas .tortasContenedor .torta1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .tortas .tortasContenedor .torta5 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .tortas .tortasContenedor .torta6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .tortas .tortasContenedor .torta5 {
+    display: none;
+  }
+  .paginaTortas .tortas .titulo {
+    font-size: 3rem;
+  }
+  .paginaTortas .tortas .volanta {
+    font-size: 2rem;
+  }
+  .paginaTortas .tortas .tortasContenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .paginaTortas .tortas .tortasContenedor .torta1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta4 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta6 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta7 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta8 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta9 {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta10 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta11 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta12 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .tortas .titulo {
+    font-size: 3rem;
+  }
+  .tortas .tortasContenedor {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 200px);
+  }
+  .tortas .tortasContenedor .torta4 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta2 {
+    grid-column: 3/4;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta3 {
+    grid-column: 4/6;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta1 {
+    grid-column: 6/7;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta5 {
+    grid-column: 8/9;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta6 {
+    grid-column: 7/8;
+    grid-row: 1/1;
+  }
+  .paginaTortas .tortas .titulo {
+    font-size: 3rem;
+  }
+  .paginaTortas .volanta {
+    font-size: 2rem;
+  }
+  .paginaTortas .tortasContenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .paginaTortas .tortasContenedor .torta1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortasContenedor .torta2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortasContenedor .torta3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortasContenedor .torta4 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  .paginaTortas .tortasContenedor .torta5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortasContenedor .torta6 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .paginaTortas .tortasContenedor .torta7 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortasContenedor .torta8 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortasContenedor .torta9 {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortasContenedor .torta10 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortasContenedor .torta11 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortasContenedor .torta12 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .tortas .titulo {
+    font-size: 3rem;
+  }
+  .tortas .tortasContenedor {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 200px);
+  }
+  .tortas .tortasContenedor .torta4 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta2 {
+    grid-column: 3/4;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta3 {
+    grid-column: 4/6;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta1 {
+    grid-column: 6/7;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta5 {
+    grid-column: 8/9;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta6 {
+    grid-column: 7/8;
+    grid-row: 1/1;
+  }
+  .paginaTortas .tortas {
+    margin-top: 90px;
+  }
+  .paginaTortas .tortas .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaTortas .tortas .volanta {
+    font-size: 2.1rem;
+  }
+  .paginaTortas .tortas .tortasContenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .paginaTortas .tortas .tortasContenedor .torta1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta4 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta6 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta7 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta8 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta9 {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta10 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta11 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta12 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .tortas .titulo {
+    font-size: 3.375rem;
+  }
+  .tortas .tortasContenedor {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 250px);
+  }
+  .tortas .tortasContenedor .torta4 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta2 {
+    grid-column: 3/4;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta3 {
+    grid-column: 4/6;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta1 {
+    grid-column: 6/7;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta5 {
+    grid-column: 8/9;
+    grid-row: 1/1;
+  }
+  .tortas .tortasContenedor .torta6 {
+    grid-column: 7/8;
+    grid-row: 1/1;
+  }
+  .paginaTortas .tortas {
+    margin-top: 100px;
+  }
+  .paginaTortas .tortas .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaTortas .tortas .volanta {
+    font-size: 2.3rem;
+  }
+  .paginaTortas .tortas .tortasContenedor {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .paginaTortas .tortas .tortasContenedor .torta1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta4 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta6 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta7 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta8 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta9 {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta10 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta11 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+  .paginaTortas .tortas .tortasContenedor .torta12 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.conoceme {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #F5CC14;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda {
+  position: relative;
+  text-align: center;
+  order: 1;
+}
+.conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo {
+  width: 100%;
+  font-family: "Dancing Script";
+  font-size: "2.25rem";
+  text-align: "center";
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.conoceme .conocemeTextos .texto, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .texto, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .texto {
+  margin-bottom: 20px;
+}
+.conoceme .conocemeTextos .botonVer, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .botonVer, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.conoceme .conocemeTextos .botonVer:hover, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .botonVer:hover, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .botonVer:hover {
+  color: #681EA8;
+}
+.conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 2;
+}
+.conoceme .conocemeFotoCont .conocemeFoto, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha .conocemeFoto, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda .conocemeFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaConoceme .conoceme {
+  background: none;
+}
+.paginaConoceme .conoceme .conocemeContenedor {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda {
+  order: 1 !important;
+  background: #F5CC14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+  order: 2 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda {
+  order: 1 !important;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+  order: 2 !important;
+}
+.paginaConoceme .conoceme .titulo {
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaConoceme .conoceme .subtitulo {
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+.paginaConoceme .conoceme .volver {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaConoceme .conoceme .volanta {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.paginaConoceme .conoceme .volanta:hover {
+  opacity: 0.5;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.3;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 2.625rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.4;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 3rem;
+  }
+  .paginaConoceme .conoceme {
+    margin-top: 90px;
+  }
+  .paginaConoceme .conoceme .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaConoceme .conoceme .subtitulo {
+    font-size: 1.8rem;
+  }
+  .paginaConoceme .conoceme .volanta {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.5;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaConoceme .conoceme {
+    margin-top: 100px;
+  }
+  .paginaConoceme .conoceme .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaConoceme .conoceme .subtitulo {
+    font-size: 2rem;
+  }
+  .paginaConoceme .conoceme .volanta {
+    font-size: 1.8rem;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+@-webkit-keyframes animalegriafoto {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+}
+@keyframes animalegriafoto {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+}
+.alegrias {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.alegrias .titulo {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 30px;
+}
+.alegrias .alegriasContenedor {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 5px;
+}
+.alegrias .alegriasContenedor .alegria {
+  position: relative;
+  margin-bottom: 10px;
+}
+.alegrias .alegriasContenedor .alegria .alegriaFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0 0 10px 0;
+  order: 2;
+}
+.alegrias .alegriasContenedor .alegria .alegriaFotoCont .alegriaFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.alegrias .alegriasContenedor .alegria:hover {
+  z-index: 10;
+}
+.alegrias .alegriasContenedor .alegria:hover .alegriaFotoCont .alegriaFoto {
+  -webkit-animation-name: animalegriafoto;
+          animation-name: animalegriafoto;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.alegrias .alegriasContenedor .alegria .alegriasTexto .firma {
+  margin-top: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.2rem;
+  text-align: right;
+  line-height: 1;
+  font-weight: bold;
+}
+.alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+  display: none;
+}
+
+.paginaAlegrias .alegrias .titulo {
+  font-size: 2.5rem;
+}
+.paginaAlegrias .alegrias .volver {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaAlegrias .alegrias .volver:hover {
+  opacity: 0.5;
+}
+.paginaAlegrias .alegrias .volanta {
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaAlegrias .alegrias .alegriasContenedor .alegria {
+  display: block;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+    display: block;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .paginaAlegrias .alegrias {
+    margin-top: 90px;
+  }
+  .paginaAlegrias .alegrias .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaAlegrias .alegrias .volanta {
+    font-size: 2.1rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+    display: block;
+  }
+  .paginaAlegrias .alegrias {
+    margin-top: 100px;
+  }
+  .paginaAlegrias .alegrias .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaAlegrias .alegrias .volanta {
+    font-size: 2.3rem;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.armala {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #681EA8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* vista monitores pequeños */
+}
+.armala .armalaTextos {
+  position: relative;
+  text-align: center;
+  order: 2;
+  color: #F5CC14;
+}
+.armala .armalaTextos .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.armala .armalaTextos .titulo {
+  width: 100%;
+  font-size: 2.25rem;
+  font-family: "Dancing Script";
+  text-align: center;
+  margin-bottom: 20px;
+}
+.armala .armalaTextos .texto {
+  margin-bottom: 20px;
+}
+.armala .armalaTextos .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.armala .armalaTextos .botonVer:hover {
+  color: #681EA8;
+}
+.armala .armalaFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 1;
+}
+.armala .armalaFotoCont .armalaFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaArmala .armala {
+  background: none;
+  display: block;
+}
+.paginaArmala .armala .titulo {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 30px;
+}
+.paginaArmala .armala .volver {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaArmala .armala .volver:hover {
+  opacity: 0.5;
+}
+.paginaArmala .armala .volanta {
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaArmala .armala .armalaContenedor {
+  padding-bottom: calc(60vw - 162px);
+}
+.paginaArmala .armala .armalaContenedor .subtitulo {
+  padding-top: 1rem;
+  text-align: center;
+}
+.paginaArmala .armala .armalaContenedor .opciones label {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  margin: 0 0.5rem;
+  width: calc(100% - 1rem);
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #F5CC14;
+}
+.paginaArmala .armala .armalaContenedor .opciones label:hover {
+  background: #2091F5;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion {
+  width: 0;
+  height: 0;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/porcion.svg);
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label {
+  background: #681EA8;
+  color: #FFF;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-1:after {
+  background-image: url(../img/sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-2:after {
+  background-image: url(../img/sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-3:after {
+  background-image: url(../img/sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-4:after {
+  background-image: url(../img/sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-5:after {
+  background-image: url(../img/sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-6:after {
+  background-image: url(../img/sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-7:after {
+  background-image: url(../img/sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-1:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-2:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-3:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-4:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-5:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-6:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-7:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-1:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-1-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-2:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-2-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-3:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-3-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-4:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-4-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-5:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-5-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-6:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-6-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-7:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-7-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-1:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-1-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-2:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-2-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-3:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-3-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-4:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-4-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-5:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-5-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-6:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-6-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-7:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-7-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60vw;
+  z-index: 90;
+  background: #FFF;
+}
+.paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/fondoporcion.svg);
+  z-index: 105;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .armala .armalaTextos {
+    order: 2;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.3;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 2.625rem;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 2;
+  }
+  .armala .armalaTextos {
+    order: 1;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.4;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 3rem;
+  }
+  .paginaArmala .armala {
+    margin-top: 90px;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2.1rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 2;
+  }
+  .armala .armalaTextos {
+    order: 1;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.5;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaArmala .armala {
+    margin-top: 100px;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2.3rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores extragrandes */
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.escribime {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #F5CC14;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.escribime .escribimeTextos {
+  position: relative;
+  text-align: center;
+  order: 1;
+}
+.escribime .escribimeTextos .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.escribime .escribimeTextos .titulo {
+  width: 100%;
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.escribime .escribimeTextos .texto {
+  margin-bottom: 20px;
+}
+.escribime .escribimeTextos .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.escribime .escribimeTextos .botonVer:hover {
+  color: #681EA8;
+}
+.escribime .escribimeTextos .col-12 {
+  text-align: left;
+}
+.escribime .escribimeTextos .col-lg-6 {
+  text-align: left;
+}
+.escribime .escribimeTextos input {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeTextos select {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeTextos textarea {
+  margin-bottom: 1.5rem;
+}
+.escribime .escribimeFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 2;
+}
+.escribime .escribimeFotoCont .escribimeFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaEscibime .escribime {
+  background: none;
+}
+.paginaEscibime .escribime .escribimeContenedor {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.paginaEscibime .escribime .escribimeContenedor.espejado .escribimeTextos {
+  order: 1;
+}
+.paginaEscibime .escribime .escribimeContenedor.espejado .escribimeFotoCont {
+  order: 2;
+}
+.paginaEscibime .escribime .titulo {
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaEscibime .escribime .subtitulo {
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+.paginaEscibime .escribime .volver {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaEscibime .escribime .volanta {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.paginaEscibime .escribime .volanta:hover {
+  opacity: 0.5;
+}
+
+/* vista tablets */
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.3;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 2.625rem;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 1.65rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.3rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.4;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 3rem;
+  }
+  .paginaEscibime .escribime {
+    margin-top: 90px;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 1.8rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .escribime .escribimeFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .escribime .escribimeTextos {
+    order: 2;
+  }
+  .escribime .escribimeTextos .volanta {
+    font-size: 1.5;
+  }
+  .escribime .escribimeTextos .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaEscibime .escribime {
+    margin-top: 100px;
+  }
+  .paginaEscibime .escribime .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaEscibime .escribime .subtitulo {
+    font-size: 2rem;
+  }
+  .paginaEscibime .escribime .volanta {
+    font-size: 1.8rem;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=estilos.css.map */

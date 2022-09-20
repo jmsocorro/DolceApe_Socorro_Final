@@ -1,0 +1,87 @@
+@import variables
+footer 
+    position: relative
+    padding: 20px
+    background-color: $color2
+    color: $blanco
+    display: flex
+    flex-wrap: wrap
+    .isologo 
+        height: 40px
+        width: 100%
+        display: flex
+        justify-content: center
+        .iso 
+            width: 40px
+            height: 40px
+            .isoimg 
+                width: 100%
+                height: 100%
+        .logo 
+            @include fuentes($font1, 1.875rem, left, 1)
+            color: $color1
+            padding: 5px 10px
+    .navbarRedes 
+        text-align: center 
+        margin: auto  
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        li 
+            width: 50px
+            a 
+                display: block
+                font-size: 1.25rem
+                color: $blanco
+                img 
+                    width: 30px
+                    height: 30px
+    .navbarLegales 
+        text-align: center 
+        margin: auto  
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        li 
+            position: relative
+            a 
+                display: block
+                font-size: 1rem
+                color: $blanco
+                padding: 10px
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) 
+    footer 
+        .isologo 
+            height: 50px
+            width: 220px
+            .iso 
+                width: 50px
+                height: 50px
+            logo 
+                font-size: 2.5rem
+        .navbarRedes 
+            text-align: center 
+        .navbarLegales 
+            text-align: center 
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) 
+    footer 
+        .isologo 
+            height: 60px
+            width: 280px
+        .iso 
+            width: 60px
+            height: 60px
+        .logo 
+            font-size: 3.125rem
+        .navbarRedes 
+            text-align: center 
+        .navbarLegales 
+            text-align: center 
+/* vista monitores extragrandes */

@@ -1,0 +1,110 @@
+@import variables
+header 
+    position: fixed
+    display: block
+    width: 100%
+    height: 80px
+    padding: 0px
+    z-index: 1
+    background: $blanco
+    top: 0
+    z-index: 1000
+    .navbar
+        background: $blanco
+        transition: all .5s
+        .isologo 
+            height: 60px
+            width: 220px
+            transition: all .5s
+            .iso 
+                position: absolute
+                width: 60px
+                height: 60px
+                transition: all .5s
+                .isoimg 
+                    width: 100%
+                    height: 100%
+            .logo 
+                transition: all .5s
+                @include fuentes($font1, 40px, left, 1)
+                color: $color1
+                padding: 10px 10px 10px 70px
+        &.navcomprimido
+            .isologo 
+                height: calc(60px * .7)
+                width: calc(220px * .7)
+                .iso 
+                    position: absolute
+                    width: calc(60px * .7)
+                    height: calc(60px * .7)
+                .logo 
+                    font-size: calc(40px * .7)
+                    padding: calc(10px * .7) calc(10px * .7) calc(10px * .7) calc(70px * .7)
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) 
+    header 
+        height: 90px
+        .navbar
+            .isologo 
+                height: 70px
+                width: 270px
+                .iso 
+                    width: 70px
+                    height: 70px
+                .logo 
+                    font-size: 50px
+                    padding: 10px 10px 10px 80px
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) 
+    header 
+        height: 100px
+        .navbar
+            .isologo 
+                height: 80px
+                width: 310px
+                .iso 
+                    width: 80px
+                    height: 80px
+                .logo 
+                    font-size: 60px
+                    padding: 10px 10px 10px 90px
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) 
+    header 
+        height: 110px
+        background: linear-gradient(rgba($blanco,1), rgba($blanco,0.5) 75%, rgba($blanco,0))
+        .navbar
+            background: none
+            &.navcomprimido
+                background: $blanco
+            .isologo 
+                height: 90px
+                width: 350px
+                .iso 
+                    width: 90px
+                    height: 90px
+                .logo 
+                    font-size: 70px
+                    padding: 10px 10px 10px 100px   
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) 
+    header 
+        height: 120px
+        background: linear-gradient(rgba($blanco,1), rgba($blanco,0.5) 75%, rgba($blanco,0))
+        .navbar
+            background: none
+            &.navcomprimido
+                background: $blanco
+            .isologo 
+                height: 100px
+                width: 400px
+                .iso 
+                    width: 100px
+                    height: 100px
+                .logo 
+                    font-size: 80px
+                    padding: 10px 10px 10px 110px
+/* vista monitores extragrandes */

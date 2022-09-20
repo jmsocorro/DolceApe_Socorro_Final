@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.promos {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 1rem;
+  padding: 20px;
+  font-size: 2rem;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #FFF;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .promos {
+    height: calc(100vh - 90px);
+  }
+}
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .promos {
+    height: calc(100vh - 100px);
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 2.4rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .promos {
+    height: 100vh;
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 2.6rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.3rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .promos {
+    height: 100vh;
+    min-height: 400px;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 3rem;
+  }
+  .promos .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=promos.css.map */

@@ -1,0 +1,725 @@
+@charset "UTF-8";
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.armala {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #681EA8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* vista monitores pequeños */
+}
+.armala .armalaTextos {
+  position: relative;
+  text-align: center;
+  order: 2;
+  color: #F5CC14;
+}
+.armala .armalaTextos .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.armala .armalaTextos .titulo {
+  width: 100%;
+  font-size: 2.25rem;
+  font-family: "Dancing Script";
+  text-align: center;
+  margin-bottom: 20px;
+}
+.armala .armalaTextos .texto {
+  margin-bottom: 20px;
+}
+.armala .armalaTextos .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.armala .armalaTextos .botonVer:hover {
+  color: #681EA8;
+}
+.armala .armalaFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 1;
+}
+.armala .armalaFotoCont .armalaFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaArmala .armala {
+  background: none;
+  display: block;
+}
+.paginaArmala .armala .titulo {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 30px;
+}
+.paginaArmala .armala .volver {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaArmala .armala .volver:hover {
+  opacity: 0.5;
+}
+.paginaArmala .armala .volanta {
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaArmala .armala .armalaContenedor {
+  padding-bottom: calc(60vw - 162px);
+}
+.paginaArmala .armala .armalaContenedor .subtitulo {
+  padding-top: 1rem;
+  text-align: center;
+}
+.paginaArmala .armala .armalaContenedor .opciones label {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  margin: 0 0.5rem;
+  width: calc(100% - 1rem);
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #F5CC14;
+}
+.paginaArmala .armala .armalaContenedor .opciones label:hover {
+  background: #2091F5;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion {
+  width: 0;
+  height: 0;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/porcion.svg);
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label {
+  background: #681EA8;
+  color: #FFF;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-1:after {
+  background-image: url(../img/sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-2:after {
+  background-image: url(../img/sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-3:after {
+  background-image: url(../img/sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-4:after {
+  background-image: url(../img/sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-5:after {
+  background-image: url(../img/sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-6:after {
+  background-image: url(../img/sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.size.sz-7:after {
+  background-image: url(../img/sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-1:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-2:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-3:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-4:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-5:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-6:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.sabor.sa-7:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/sa-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-1:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-1-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-2:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-2-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-3:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-3-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-4:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-4-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-5:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-5-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-6:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-6-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.color.co-7:before {
+  mix-blend-mode: normal;
+  z-index: 109;
+  background-image: url(../img/co-7-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-1:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-1-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-2:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-2-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-3:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-3-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-4:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-4-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-5:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-5-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-6:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-6-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label.relleno.re-7:before {
+  mix-blend-mode: normal;
+  background-image: url(../img/re-7-porcion.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes1:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-1.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes2:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-2.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes3:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-3.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes4:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-4.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes5:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-5.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes6:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-6.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-1:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-1-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-2:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-2-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-3:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-3-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-4:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-4-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-5:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-5-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-6:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-6-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .opcion#sizes7:checked ~ [name=color]:checked + label.co-7:after {
+  z-index: 105;
+  mix-blend-mode: normal;
+  background-image: url(../img/co-7-sz-7.svg);
+}
+.paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60vw;
+  z-index: 90;
+  background: #FFF;
+}
+.paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% + 15vw);
+  height: 30vw;
+  width: 30vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/fondoporcion.svg);
+  z-index: 105;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .armala .armalaTextos {
+    order: 2;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.3;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 2.625rem;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(50% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 2;
+  }
+  .armala .armalaTextos {
+    order: 1;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.4;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 3rem;
+  }
+  .paginaArmala .armala {
+    margin-top: 90px;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2.1rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .armala .armalaFotoCont {
+    padding-bottom: 30%;
+    order: 2;
+  }
+  .armala .armalaTextos {
+    order: 1;
+  }
+  .armala .armalaTextos .volanta {
+    font-size: 1.5;
+  }
+  .armala .armalaTextos .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaArmala .armala {
+    margin-top: 100px;
+  }
+  .paginaArmala .armala .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaArmala .armala .volanta {
+    font-size: 2.3rem;
+  }
+  .paginaArmala .armala .armalaContenedor {
+    padding-bottom: 2rem;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked ~ .porcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:after {
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .opcion:checked + label:before {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondotorta {
+    display: none;
+    top: 20%;
+    left: 50%;
+    right: 0;
+    height: 30vw;
+  }
+  .paginaArmala .armala .armalaContenedor .opciones .fondoporcion {
+    top: calc(20% + 15vw);
+    left: calc(100% - 15vw);
+    height: 15vw;
+    width: 15vw;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=armala.css.map */

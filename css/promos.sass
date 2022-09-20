@@ -1,0 +1,78 @@
+@import variables
+.promos 
+    position: relative
+    display: block
+    width: 100%
+    height: calc(100vh - 80px)
+    overflow: hidden
+
+    .carousel 
+        .carousel-inner 
+            .carousel-item 
+                .carousel-caption 
+                    position: absolute
+                    right: 0
+                    left: 0
+                    top: 1rem
+                    padding: 20px
+                    font-size: 2rem
+                    z-index: 1
+                    text-align: center
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    color: $negro
+                    text-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 30px $blanco, 0 0 40px $blanco, 0 0 50px $blanco
+                    h2 
+                        font-size: 2rem
+                        font-weight: bold
+                    h3 
+                        font-size: 1rem
+                        font-weight: normal
+/* vista tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) 
+    .promos 
+        height: calc(100vh - 90px)
+/* vista tablets */
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) 
+    .promos 
+        height: calc(100vh - 100px)
+        min-height: 400px
+        .carousel 
+            .carousel-inner 
+                .carousel-item 
+                    .carousel-caption 
+                        h2 
+                            font-size: calc(2rem * 1.2)
+                        h3 
+                            font-size: calc(1rem * 1.2)
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) 
+    .promos 
+        height: 100vh
+        min-height: 400px
+        .carousel 
+            .carousel-inner 
+                .carousel-item 
+                    .carousel-caption 
+                        h2 
+                            font-size: calc(2rem * 1.3)
+                        h3 
+                            font-size: calc(1rem * 1.3)
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) 
+    .promos 
+        height: 100vh
+        min-height: 400px
+        .carousel 
+            .carousel-inner 
+                .carousel-item 
+                    .carousel-caption 
+                        h2 
+                            font-size: calc(2rem * 1.5)
+                        h3 
+                            font-size: calc(1rem * 1.5)
+/* vista monitores extragrandes */

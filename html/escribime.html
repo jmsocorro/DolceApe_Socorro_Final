@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/26f539ab9c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Dolce Ape Tortas - Dejame tus comentarios</title>
+    <meta name="keywords" content="torta, decoración, cumpleaños, bautismo, galletas, bodas, pastelería">
+    <meta name="description" content="Si te antoja algo dulce escribime">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar""">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../">
+                    <div class="isologo">
+                        <div class="iso">
+                            <img class="isoimg" src="../img/dolceapeico.svg" alt="bee">
+                        </div>
+                        <div class="logo">Dolce Ape</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/tortas.html">TORTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/conoceme.html">CONOCEME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/alegrias.html">ALEGRÍAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../html/armala.html">ARMALA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/escribime.html">ESCRIBIME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="paginaEscibime">
+        <section class="escribime">
+            <article>
+                <div class="escribimeContenedor row">
+                    <div class="escribimeTextos col-12 col-lg-6 p-5">
+                        <h1 class="titulo">Escribíme</h1>
+                        <form class="row" action="#" method="get" enctype="application/x-www-form-urlencoded">
+                            <legend class="mt5">Contame un poco de vos</legend>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <label for="nombre" class="form-label">¿Como te llamas?</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Tu nombre, apodo, como te guste" name="nombre" id="nombre"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-6">
+                                    <label for="email" class="form-label">Dejame tu correo electrónico</label>
+                                    <input type="email" class="form-control" placeholder="maria@miweb.com" name="email"
+                                        id="email" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="celular" class="form-label">Si querés dejame tu celular para responderte
+                                        mas rápido</label>
+                                    <input type="number" class="form-control" name="celular" id="celular"
+                                        placeholder="Ej: 54 11 2664 5546">
+                                </div>
+                            </div>
+                            <legend class="mt-5">Contame en que te puedo ayudar</legend>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label">¿Cómo te puedo ayudar?</label>
+                                    <select name="asunto" id="asunto" class="form-select" required>
+                                        <option value="">Elejí una opción</option>
+                                        <option value="Consulta">Quiero conocer mas de las tortas</option>
+                                        <option value="Presupuesto">Necesito un Presupuesto</option>
+                                        <option value="Cursos">Me gustaría aprender a hacer tortas</option>
+                                        <option value="Otro">Tengo orta duda</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label">¿Cómo te puedo ayudar?</label>
+                                    <textarea class="form-control" name="mensaje" id="mensaje" cols="20" rows="5"
+                                        placeholder="Usa este espacio para dejarme el mensaje"></textarea>
+                                </div>
+                            </div>
+
+
+                            <legend class="mt-5">Sigamos en contacto</legend>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="novedades" id="novedades">
+                                    <label class="form-check-label" for="novedades">Quiero estar al tanto de todas las
+                                        novedades</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button type="reset" class="btn btn-primary">BORRAR</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary">ENVIAR</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <figure class="escribimeFotoCont orden1 col-12 col-lg-6">
+                        <img class="escribimeFoto" src="../img/mariana2.jpg" alt="Mariana"></i>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="col-lg-4 col-12 4 justify-content-center justify-content-lg-start">
+            <div class="isologo">
+                <div class="iso">
+                    <img class="isoimg" src="../img/dolceapeico.svg" alt="bee">
+                </div>
+                <h2 class="logo">Dolce Ape</h2>
+            </div>
+        </div>
+        <ul class="navbarRedes nav col-12 col-lg-4 justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../img/facebook-square-brands.svg" alt="Facebook">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../img/instagram-brands.svg" alt="Instagram">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../img/whatsapp-brands.svg" alt="Whatsapp">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../img/envelope-solid.svg" alt="Correo electrínico">
+                </a>
+            </li>
+        </ul>
+        <ul class="navbarLegales nav col-12 col-lg-4 justify-content-center  justify-content-lg-end">
+            <li class="nav-item"><a href="#" class="nav-link">Copyright ©2022</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Politica de Privacidad</a></li>
+        </ul>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("navbar").classList.add("navcomprimido");
+          } else {
+            document.getElementById("navbar").classList.remove("navcomprimido");
+          }
+        }
+    </script>
+</body>
+
+</html>

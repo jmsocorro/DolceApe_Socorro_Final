@@ -1,0 +1,150 @@
+
+@import variables
+.conoceme 
+    position: relative
+    width: 100%
+    overflow: hidden
+    background: $color3
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .conocemeTextos 
+        position: relative
+        text-align: center
+        order: 1
+        .volanta 
+            margin-bottom: 10px
+            margin-top: 30px
+            font-size: 1.2rem
+        .titulo 
+                width: 100%
+                @include fuentes($font1, "2.25rem", "center", 1)
+                margin-bottom: 20px
+        .texto 
+            margin-bottom: 20px
+        .botonVer 
+            width: 100%
+            padding: 5px
+            color: $blanco
+            &:hover 
+                color: $color1
+    .conocemeFotoCont 
+        position: relative
+        align-self: stretch
+        padding: 0 0 60% 0
+        margin: 0
+        order: 2
+        .conocemeFoto 
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+.paginaConoceme 
+    .conoceme 
+        background: none
+        .conocemeContenedor 
+            position: relative
+            overflow: hidden
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: stretch
+            .conocemeTextos-izquierda
+                @extend .conocemeTextos
+                order: 1 !important
+                background: $color3
+                display: flex
+                flex-direction: column
+                justify-content: center
+            .conocemeTextos-derecha
+                @extend .conocemeTextos
+                order: 2 !important
+                display: flex
+                flex-direction: column
+                justify-content: center
+            .conocemeFotoCont-izquierda
+                @extend .conocemeFotoCont
+                order: 1 !important
+            .conocemeFotoCont-derecha
+                @extend .conocemeFotoCont
+                order: 2 !important
+        .titulo 
+            @include fuentes($font1, 2.5rem, center, 1)
+        .subtitulo 
+            @include fuentes($font1, 1.5rem, center, 1)
+            padding: .5rem 0
+        .volver 
+            display: block
+            position: absolute
+            top: 5px
+            right: 10px
+            padding: 5px
+            color: #681EA8
+            transition: opacity .5s
+            z-index: 1
+        .volanta 
+            padding: 10px
+            text-align: center
+            font-size: 1.2rem
+            font-weight: normal
+            &:hover 
+                opacity: .5
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) 
+    .conoceme 
+        .conocemeFotoCont 
+            padding-bottom: 30%
+            order: 1
+        .conocemeTextos 
+            order: 2
+            .volanta 
+                font-size: 1.3
+            .titulo 
+                font-size: 2.625rem
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) 
+    .conoceme 
+        .conocemeFotoCont 
+            padding-bottom: 30%
+            order: 1
+        .conocemeTextos 
+            order: 2
+            .volanta 
+                font-size: 1.4
+            .titulo 
+                font-size: 3rem
+    .paginaConoceme 
+        .conoceme 
+            margin-top: 90px
+            .titulo 
+                font-size: 3.2rem
+            .subtitulo 
+                font-size: 1.8rem
+            .volanta 
+                font-size: 1.5rem
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) 
+    .conoceme 
+        .conocemeFotoCont 
+            padding-bottom: 30%
+            order: 1
+        .conocemeTextos 
+            order: 2
+            .volanta 
+                font-size: 1.5
+            .titulo 
+                font-size: 3.375rem
+    .paginaConoceme 
+        .conoceme 
+            margin-top: 100px
+            .titulo 
+                font-size: 3.5rem
+            .subtitulo 
+                font-size: 2rem
+            .volanta 
+                font-size: 1.8rem
+/* vista monitores extragrandes */

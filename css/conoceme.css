@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+.conoceme {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #F5CC14;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda {
+  position: relative;
+  text-align: center;
+  order: 1;
+}
+.conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo {
+  width: 100%;
+  font-family: "Dancing Script";
+  font-size: "2.25rem";
+  text-align: "center";
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.conoceme .conocemeTextos .texto, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .texto, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .texto {
+  margin-bottom: 20px;
+}
+.conoceme .conocemeTextos .botonVer, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .botonVer, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .botonVer {
+  width: 100%;
+  padding: 5px;
+  color: #FFF;
+}
+.conoceme .conocemeTextos .botonVer:hover, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .botonVer:hover, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .botonVer:hover {
+  color: #681EA8;
+}
+.conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0;
+  order: 2;
+}
+.conoceme .conocemeFotoCont .conocemeFoto, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha .conocemeFoto, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda .conocemeFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.paginaConoceme .conoceme {
+  background: none;
+}
+.paginaConoceme .conoceme .conocemeContenedor {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda {
+  order: 1 !important;
+  background: #F5CC14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+  order: 2 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda {
+  order: 1 !important;
+}
+.paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+  order: 2 !important;
+}
+.paginaConoceme .conoceme .titulo {
+  font-family: "Dancing Script";
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaConoceme .conoceme .subtitulo {
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+.paginaConoceme .conoceme .volver {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaConoceme .conoceme .volanta {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.paginaConoceme .conoceme .volanta:hover {
+  opacity: 0.5;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.3;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 2.625rem;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.4;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 3rem;
+  }
+  .paginaConoceme .conoceme {
+    margin-top: 90px;
+  }
+  .paginaConoceme .conoceme .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaConoceme .conoceme .subtitulo {
+    font-size: 1.8rem;
+  }
+  .paginaConoceme .conoceme .volanta {
+    font-size: 1.5rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .conoceme .conocemeFotoCont, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeFotoCont-derecha {
+    padding-bottom: 30%;
+    order: 1;
+  }
+  .conoceme .conocemeTextos, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha {
+    order: 2;
+  }
+  .conoceme .conocemeTextos .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .volanta, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .volanta {
+    font-size: 1.5;
+  }
+  .conoceme .conocemeTextos .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-izquierda .titulo, .paginaConoceme .conoceme .conocemeContenedor .conocemeTextos-derecha .titulo {
+    font-size: 3.375rem;
+  }
+  .paginaConoceme .conoceme {
+    margin-top: 100px;
+  }
+  .paginaConoceme .conoceme .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaConoceme .conoceme .subtitulo {
+    font-size: 2rem;
+  }
+  .paginaConoceme .conoceme .volanta {
+    font-size: 1.8rem;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=conoceme.css.map */

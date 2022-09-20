@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*Colores*/
+/*Colores*/
+/* Fuentes */
+/* Fuentes */
+/* MIXINS */
+@-webkit-keyframes animalegriafoto {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+}
+@keyframes animalegriafoto {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: scale(1.2);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  }
+}
+.alegrias {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.alegrias .titulo {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 30px;
+}
+.alegrias .alegriasContenedor {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 5px;
+}
+.alegrias .alegriasContenedor .alegria {
+  position: relative;
+  margin-bottom: 10px;
+}
+.alegrias .alegriasContenedor .alegria .alegriaFotoCont {
+  position: relative;
+  align-self: stretch;
+  padding: 0 0 60% 0;
+  margin: 0 0 10px 0;
+  order: 2;
+}
+.alegrias .alegriasContenedor .alegria .alegriaFotoCont .alegriaFoto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.alegrias .alegriasContenedor .alegria:hover {
+  z-index: 10;
+}
+.alegrias .alegriasContenedor .alegria:hover .alegriaFotoCont .alegriaFoto {
+  -webkit-animation-name: animalegriafoto;
+          animation-name: animalegriafoto;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.alegrias .alegriasContenedor .alegria .alegriasTexto .firma {
+  margin-top: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.2rem;
+  text-align: right;
+  line-height: 1;
+  font-weight: bold;
+}
+.alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+  display: none;
+}
+
+.paginaAlegrias .alegrias .titulo {
+  font-size: 2.5rem;
+}
+.paginaAlegrias .alegrias .volver {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 5px;
+  color: #681EA8;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.paginaAlegrias .alegrias .volver:hover {
+  opacity: 0.5;
+}
+.paginaAlegrias .alegrias .volanta {
+  padding: 10px;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+.paginaAlegrias .alegrias .alegriasContenedor .alegria {
+  display: block;
+}
+
+/* vista monitores pequeños */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+    display: block;
+  }
+}
+/* vista monitores pequeños */
+/* vista monitores grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .paginaAlegrias .alegrias {
+    margin-top: 90px;
+  }
+  .paginaAlegrias .alegrias .titulo {
+    font-size: 3.2rem;
+  }
+  .paginaAlegrias .alegrias .volanta {
+    font-size: 2.1rem;
+  }
+}
+/* vista monitores grandes */
+/* vista monitores extragrandes */
+@media screen and (min-width: 1201px) {
+  .alegrias .alegriasContenedor .alegria.alegria5, .alegrias .alegriasContenedor .alegria.alegria6 {
+    display: block;
+  }
+  .paginaAlegrias .alegrias {
+    margin-top: 100px;
+  }
+  .paginaAlegrias .alegrias .titulo {
+    font-size: 3.5rem;
+  }
+  .paginaAlegrias .alegrias .volanta {
+    font-size: 2.3rem;
+  }
+}
+/* vista monitores extragrandes *//*# sourceMappingURL=alegrias.css.map */
